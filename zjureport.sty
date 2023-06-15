@@ -1,20 +1,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%UCAS课程论文模板
-%%作者：jweihe
+%%ZJU课程论文模板
+%%作者：Percy
 %%License：Creative Commons CC BY 4.0
+
+
+%%最后更改于2023/06/15
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%在"UCAS课程论文模板"基础上修改而来
+%%原作者：jweihe
 %%GitHub：https://github.com/jweihe/UCAS_Latex_Template
 %%Overleaf：https://www.overleaf.com/latex/templates/zhong-guo-ke-xue-yuan-da-xue-ke-cheng-lun-wen-mo-ban/nphpxhhqvnds
 
-%%最后更改于2023/06/05
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%在"北京大学课程论文模板"基础上修改而来
-%%原作者：Shawn Wang
-%%Overleaf地址：https://www.overleaf.com/latex/templates/bei-jing-da-xue-ke-cheng-lun-wen-mo-ban/yntmqcktrzfh
-
-
-\ProvidesPackage{UCASReport}
+\ProvidesPackage{zjureport}
 
 %%页边距
 \RequirePackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
@@ -34,6 +32,7 @@
 \PassOptionsToPackage{hyphens}{url}
 \RequirePackage{hyperref}
 \RequirePackage{pythonhighlight}
+\RequirePackage{subfigure}
 
 \RequirePackage{tcolorbox}
 
@@ -123,7 +122,7 @@
     \vspace{0.5cm}
     \kaishu\Large  学号\ \dlmu[9cm]{在此填写学号} \qquad  \\ %学号
     \vspace{0.5cm}
-    \kaishu\Large   院所\ \dlmu[9cm]{中国科学院计算技术研究所} %院所
+    \kaishu\Large   院所\ \dlmu[9cm]{计算机科学与技术学院} %院所
         }
         
     \date{\today} % 默认为今天的日期，可以注释掉不显示日期
@@ -132,12 +131,17 @@
 %%在这里可更改封面logo
 \newcommand{\cover}{
 %%封面校名logo，图片都在figures文件夹里
-\begin{figure}
-	\centering
-        \vspace{2cm}
-	\includegraphics[width=0.6\textwidth]{figures/ucas_logo.pdf}
-\end{figure} 
 
+\begin{figure}[t!]
+\centering
+\vspace{1cm}
+    \subfigure{
+        \includegraphics[width=0.24\linewidth]{figures/zju_logo.png}  %legend.eps does not have a caption
+    }
+    \subfigure{
+        \includegraphics[width=0.48\linewidth]{figures/zju_char.png}    %fig1.eps has one
+    }
+\end{figure}
 \maketitle
 }
 

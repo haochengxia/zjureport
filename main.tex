@@ -1,6 +1,6 @@
 %!TeX program = xelatex
 \documentclass[12pt,hyperref,a4paper,UTF8]{ctexart}
-\usepackage{UCASReport}
+\usepackage{zjureport}
 
 %%-------------------------------正文开始---------------------------%%
 \begin{document}
@@ -39,11 +39,12 @@
 \begin{itemize}
     \item \texttt{main.tex} 主文件
     \item \texttt{reference.bib} 参考文献，使用bibtex
-    \item \texttt{UCASReport.sty} 文档格式控制，包括一些基础的设置，如页眉、标题、姓名等
+    \item \texttt{zjureport.sty} 文档格式控制，包括一些基础的设置，如页眉、标题、姓名等
     \item \texttt{figures} 放置图片的文件夹
 \end{itemize}
 
-第一次使用时需前往\texttt{UCASReport.sty} 对标题、姓名、学号、院所、页眉等进行设置，设置完后即可一劳永逸，封面logo亦可替换
+第一次使用时需前往\texttt{zjureport.sty} 对标题、姓名、学号、院所、页眉等进行设置，设置完后即可一劳永逸，封面logo亦可替换
+
 
 默认带有封面页以及目录页，页码从目录页开始
 
@@ -58,13 +59,13 @@
 \end{equation}
 
 \subsection{插入图片}
-UCAS校徽如\autoref{UCAS}所示，注意这里使用了\verb|~\autoref{}|命令，也就是会自动生成“图”“式”等前缀，无需手动输入。
+ZJU校徽如\autoref{ZJU}所示，注意这里使用了\verb|~\autoref{}|命令，也就是会自动生成“图”“式”等前缀，无需手动输入。
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width =.4\textwidth]{figures/ucas_logo.pdf}
-    \caption{中国科学院大学}
-    \label{UCAS}
+    \includegraphics[width =.4\textwidth]{figures/zju_logo.png}
+    \caption{浙江大学}
+    \label{ZJU}
 \end{figure}
 
 插入上面图片的代码：
@@ -73,13 +74,13 @@ UCAS校徽如\autoref{UCAS}所示，注意这里使用了\verb|~\autoref{}|命�
     \begin{figure}[!htbp]
         \centering
         \includegraphics[width =.4\textwidth]{figures/ucas_logo.pdf}
-        \caption{中国科学院大学}
-        \label{UCAS}
+        \caption{浙江大学}
+        \label{ZJU}
     \end{figure}
 \end{verbatim}
 
 \subsection{插入文本框}
-本模板定义了一个圆角灰底的文本框，使用简化命令\verb|\tbox{}|即可，如果你不喜欢，可以前往 \texttt{UCASReport.sty}对其进行修改。
+本模板定义了一个圆角灰底的文本框，使用简化命令\verb|\tbox{}|即可，如果你不喜欢，可以前往 \texttt{zjureport.sty}对其进行修改。
 
 \tbox{
     这是一个圆角灰底的文本框
@@ -95,7 +96,7 @@ UCAS校徽如\autoref{UCAS}所示，注意这里使用了\verb|~\autoref{}|命�
         \hline
         \texttt{main.tex}  & 主文件 \\
         \texttt{reference.bib} & 参考文献 \\
-        \texttt{UCASReport.sty}  & 文档格式控制\\
+        \texttt{zjureport.sty}  & 文档格式控制\\
         \texttt{figures}  & 图片文件夹 \\
         \hline
     \end{tabular}
@@ -139,8 +140,8 @@ UCAS校徽如\autoref{UCAS}所示，注意这里使用了\verb|~\autoref{}|命�
 \section{写在最后}
 \subsection{发布地址}
 \begin{itemize}
-    \item Github: \url{https://github.com/jweihe/UCAS_Latex_Template}
-    \item Overleaf:  \url{https://www.overleaf.com/latex/templates/UCASke-cheng-lun-wen-mo-ban/bcwvxncqffkw}
+    \item Github: \url{https://github.com/haochengxia/zjureport}
+
 \end{itemize}
 
 %%----------- 参考文献 -------------------%%
